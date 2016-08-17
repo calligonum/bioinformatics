@@ -11,8 +11,7 @@ import com.zyj.biology.dao.NewsDao;
 import com.zyj.biology.po.News;
 import com.zyj.biology.po.Team;
 
-
-public class NewsDaoImpl implements NewsDao{
+public class NewsDaoImpl implements NewsDao {
 
 	public List getNews(int id) {
 		List newss = new ArrayList();
@@ -24,6 +23,7 @@ public class NewsDaoImpl implements NewsDao{
 			daoUtil = new DbUtil();
 			sql = "select * from news where id = ?";
 			ps = daoUtil.getCon().prepareStatement(sql);
+			ps.setInt(1,id);
 			rs = ps.executeQuery();
 			while (rs.next()) {
 				News news = new News();
@@ -33,19 +33,20 @@ public class NewsDaoImpl implements NewsDao{
 				news.setPublictime(rs.getString("publictime"));
 				newss.add(news);
 			}
-		} catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			try {
 				rs.close();
 				ps.close();
 				daoUtil.close();
-			} catch(SQLException s) {
+			} catch (SQLException s) {
 				s.printStackTrace();
 			}
 		}
 		return newss;
 	}
+
 	public boolean addNews(News news) {
 		DbUtil dao = null;
 		PreparedStatement ps = null;
@@ -58,16 +59,16 @@ public class NewsDaoImpl implements NewsDao{
 			ps.setString(2, news.getContent());
 			ps.setString(3, news.getPublictime());
 			int i = ps.executeUpdate();
-			if(i != 0) {
+			if (i != 0) {
 				return true;
 			}
-		} catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			try {
 				ps.close();
 				dao.close();
-			} catch(SQLException s) {
+			} catch (SQLException s) {
 				s.printStackTrace();
 			}
 		}

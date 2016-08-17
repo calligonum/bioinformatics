@@ -13,18 +13,16 @@ import com.zyj.biology.model.Model;
 
 public class ProjectServlet extends HttpServlet {
 
-		public void doGet(HttpServletRequest request, HttpServletResponse response)
-		throws ServletException, IOException {
-			Model model = new Model();
-			List projectList = model.getProject();
-			request.getSession().setAttribute("projectList", projectList);
-			response.sendRedirect("project.jsp");
-			
-			}
-	
-		public void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		Model model = new Model();
+		List projectList = model.getProject();
+		request.getSession().setAttribute("projectList", projectList);
+		response.sendRedirect("project.jsp");
+
+	}
+
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		this.doGet(request, response);
-		}
+	}
 
 }

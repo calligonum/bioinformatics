@@ -23,7 +23,7 @@
            
           <div class="news">
            <c:forEach var="newstitleList" items="${newstitleList}">
-       <li>  <a href="GetContentbyidServlet?id=${newstitleList.id}"> ${newstitleList.title}${newstitleList.publictime}</a> </li>
+       <li>  <a href="NewsServlet?id=${newstitleList.id}"> ${newstitleList.title}${newstitleList.publictime}</a> </li>
          
        </c:forEach>
           </div>
