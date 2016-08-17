@@ -1,0 +1,4 @@
+1.bioinformatics\src\com\zyj\biology\common下面
+	更改数据库用户名和密码
+	目前的是root             password
+2.数据库文件在sql文件夹下，直接导入即可

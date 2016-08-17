@@ -1,0 +1,111 @@
+
+.textwidth{
+	width:300px;
+}
+.middle{
+	width:1022px;
+	background:#cae8ea no-repeat;
+}
+.right{
+	width:700px;
+	height:800px;
+	float:left;
+	margin-left:0px;
+	padding-top:30px;
+	padding-left:80px;
+	
+}
+
+.leftmenu{
+    float:left;
+    width:148px;
+ 
+}
+.inputid{
+	width:30px;
+	background-color:#ccc;
+}
+.textareastyle{
+	width:300px;
+	height:250px;
+	margin-top:10px;
+	
+}
+.adminprojectlist{
+	width:400px;
+}
+
+
+.adminpaper textarea{
+	width:700px;
+	height:200px;
+}
+.admintoolslink{
+	width:300px;
+}
+.admintable{
+    width:400px;
+	text-align:center;
+	margin:0 auto;
+	border:#fff 1px solid;
+	background:#cae8ea no-repeat;
+}
+.admintable td{
+	border:#fff 1px solid;
+	
+	}
+.admintabletitle {
+	width:200px;
+   font-size:18px;
+   font-weight:bold;   
+   background:#156060 no-repeat;
+      
+}
+
+.adminbutton{
+    width:80px;
+    font-size:16px;
+
+}
+.antigenstyle1{
+	width:60px;
+}
+.antigenstyle2{
+	width:30px;
+}
+.antigen textarea{
+	width:120px;
+	height:100px;
+}
+.antigenadd{
+	width:120px;
+}
+.up input{
+	width:50px;
+	font-size:16px;
+}
+.denglu{
+
+	margin:100px auto;
+	padding-left:70px;padding-top:90px;
+   width:337px;
+   height:218px;
+
+  
+	
+   
+}
+.denglu form{
+
+	
+}
+.denglu p{
+ 
+
+   color:2429f0;
+   font-size:18px;
+   font-weight: bold;
+ 
+ 
+}
+

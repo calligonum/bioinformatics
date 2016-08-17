@@ -1,0 +1,10 @@
+$(document).ready(
+	function() 
+	{
+		$(".menuTit").click(function(){
+			$(this).next("div").slideToggle("slow")
+			.siblings(".menuCont:visible").slideUp("slow");
+			$(this).toggleClass("activeTit");
+			$(this).siblings(".activeTit").removeClass("activeTit");
+		});
+	});

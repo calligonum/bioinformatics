@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+<!-- 前台 -->	
+  
+  <servlet>
+    <servlet-name>IndexServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.IndexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IndexServlet</servlet-name>
+    <url-pattern>/IndexServlet</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>TeamServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.TeamServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProjectServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.ProjectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PaperServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.PaperServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddNewsServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AddNewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResourceServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.ResourceServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ClassServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.ClassServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>HomeServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.HomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BenchmarkServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.BenchmarkServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.DownloadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ContactServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.ContactServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>HelpServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.HelpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminIndexServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminIndexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateIntroduceServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.UpdateIntroduceServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateTeamServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.UpdateTeamServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminTeamServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminTeamServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteTeamServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.DeleteTeamServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddTeamServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AddTeamServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminProjectServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminProjectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateProjectServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.UpdateProjectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteProjectServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.DeleteProjectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddProjectServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AddProjectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminPaperServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminPaperServlet</servlet-class>
+  </servlet>
+  
+ 
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdatePaperServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.UpdatePaperServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeletePaperServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.DeletePaperServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminResourceServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminResourceServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminDatasetsServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminDatasetsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminToolsServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminToolsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateDatasetsServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.UpdateDatasetsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteDatasetsServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.DeleteDatasetsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateToolsServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.UpdateToolsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteToolsServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.DeleteToolsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminClassesServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminClassesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateClassesServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.UpdateClassesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteClassesServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.DeleteClassesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddClassesServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AddClassesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminHomeServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminHomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminBenchmarkServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminBenchmarkServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminDownloadServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminDownloadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminContactServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminContactServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminHelpServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminHelpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateSubhomeServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.UpdateSubhomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminProteinServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminProteinServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateProteinServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.UpdateProteinServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteProteinServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.DeleteProteinServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddProteinServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AddProteinServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddPaperServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AddPaperServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminAntigenServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminAntigenServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateAntigenServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.UpdateAntigenServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteAntigenServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.DeleteAntigenServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddAntigenServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AddAntigenServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateDownloadServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.UpdateDownloadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteDownloadServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.DeleteDownloadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddDownloadServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AddDownloadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateContactServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.UpdateContactServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateHelpServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.UpdateHelpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddDatasetsServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AddDatasetsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddToolsServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AddToolsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Detailpaperservlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.Detailpaperservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddYearServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AddYearServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddPaperTwoServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AddPaperTwoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminDetailpaperservlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminDetailpaperservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Adminmanageservlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.Adminmanageservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminDetailPaperTwoServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminDetailPaperTwoServlet</servlet-class>
+  </servlet> 
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Detailpaperfirstservlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.Detailpaperfirstservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetContentbyidServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.GetContentbyidServlet</servlet-class>
+  </servlet>
+  <servlet>                          
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.AdminLoginServlet</servlet-class>
+  </servlet>
+   
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteNewsServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.DeleteNewsServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateNewsServlet</servlet-name>
+    <servlet-class>com.zyj.biology.servlet.UpdateNewsServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+<servlet-mapping>
+    <servlet-name>TeamServlet</servlet-name>
+    <url-pattern>/TeamServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProjectServlet</servlet-name>
+    <url-pattern>/ProjectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PaperServlet</servlet-name>
+    <url-pattern>/PaperServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResourceServlet</servlet-name>
+    <url-pattern>/ResourceServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ClassServlet</servlet-name>
+    <url-pattern>/ClassServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HomeServlet</servlet-name>
+    <url-pattern>/HomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BenchmarkServlet</servlet-name>
+    <url-pattern>/BenchmarkServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/DownloadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContactServlet</servlet-name>
+    <url-pattern>/ContactServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HelpServlet</servlet-name>
+    <url-pattern>/HelpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminIndexServlet</servlet-name>
+    <url-pattern>/AdminIndexServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateIntroduceServlet</servlet-name>
+    <url-pattern>/UpdateIntroduceServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateTeamServlet</servlet-name>
+    <url-pattern>/UpdateTeamServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminTeamServlet</servlet-name>
+    <url-pattern>/AdminTeamServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteTeamServlet</servlet-name>
+    <url-pattern>/DeleteTeamServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddTeamServlet</servlet-name>
+    <url-pattern>/AddTeamServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminProjectServlet</servlet-name>
+    <url-pattern>/AdminProjectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateProjectServlet</servlet-name>
+    <url-pattern>/UpdateProjectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteProjectServlet</servlet-name>
+    <url-pattern>/DeleteProjectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddProjectServlet</servlet-name>
+    <url-pattern>/AddProjectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminPaperServlet</servlet-name>
+    <url-pattern>/AdminPaperServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdatePaperServlet</servlet-name>
+    <url-pattern>/UpdatePaperServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeletePaperServlet</servlet-name>
+    <url-pattern>/DeletePaperServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminResourceServlet</servlet-name>
+    <url-pattern>/AdminResourceServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminDatasetsServlet</servlet-name>
+    <url-pattern>/AdminDatasetsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminToolsServlet</servlet-name>
+    <url-pattern>/AdminToolsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateDatasetsServlet</servlet-name>
+    <url-pattern>/UpdateDatasetsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteDatasetsServlet</servlet-name>
+    <url-pattern>/DeleteDatasetsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateToolsServlet</servlet-name>
+    <url-pattern>/UpdateToolsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteToolsServlet</servlet-name>
+    <url-pattern>/DeleteToolsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminClassesServlet</servlet-name>
+    <url-pattern>/AdminClassesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateClassesServlet</servlet-name>
+    <url-pattern>/UpdateClassesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteClassesServlet</servlet-name>
+    <url-pattern>/DeleteClassesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddClassesServlet</servlet-name>
+    <url-pattern>/AddClassesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminHomeServlet</servlet-name>
+    <url-pattern>/AdminHomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminBenchmarkServlet</servlet-name>
+    <url-pattern>/AdminBenchmarkServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminDownloadServlet</servlet-name>
+    <url-pattern>/AdminDownloadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminContactServlet</servlet-name>
+    <url-pattern>/AdminContactServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminHelpServlet</servlet-name>
+    <url-pattern>/AdminHelpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateSubhomeServlet</servlet-name>
+    <url-pattern>/UpdateSubhomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminProteinServlet</servlet-name>
+    <url-pattern>/AdminProteinServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateProteinServlet</servlet-name>
+    <url-pattern>/UpdateProteinServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteProteinServlet</servlet-name>
+    <url-pattern>/DeleteProteinServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddProteinServlet</servlet-name>
+    <url-pattern>/AddProteinServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddPaperServlet</servlet-name>
+    <url-pattern>/AddPaperServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminAntigenServlet</servlet-name>
+    <url-pattern>/AdminAntigenServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateAntigenServlet</servlet-name>
+    <url-pattern>/UpdateAntigenServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteAntigenServlet</servlet-name>
+    <url-pattern>/DeleteAntigenServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddAntigenServlet</servlet-name>
+    <url-pattern>/AddAntigenServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateDownloadServlet</servlet-name>
+    <url-pattern>/UpdateDownloadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteDownloadServlet</servlet-name>
+    <url-pattern>/DeleteDownloadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddDownloadServlet</servlet-name>
+    <url-pattern>/AddDownloadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateContactServlet</servlet-name>
+    <url-pattern>/UpdateContactServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateHelpServlet</servlet-name>
+    <url-pattern>/UpdateHelpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddDatasetsServlet</servlet-name>
+    <url-pattern>/AddDatasetsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddToolsServlet</servlet-name>
+    <url-pattern>/AddToolsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Detailpaperservlet</servlet-name>
+    <url-pattern>/Detailpaperservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddYearServlet</servlet-name>
+    <url-pattern>/AddYearServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddPaperTwoServlet</servlet-name>
+    <url-pattern>/AddPaperTwoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminDetailpaperservlet</servlet-name>
+    <url-pattern>/AdminDetailpaperservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Adminmanageservlet</servlet-name>
+    <url-pattern>/Adminmanageservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminDetailPaperTwoServlet</servlet-name>
+    <url-pattern>/AdminDetailPaperTwoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Detailpaperfirstservlet</servlet-name>
+    <url-pattern>/Detailpaperfirstservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetContentbyidServlet</servlet-name>
+    <url-pattern>/GetContentbyidServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/AdminLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddNewsServlet</servlet-name>
+    <url-pattern>/AddNewsServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+
+  <welcome-file-list>
+  <welcome-file>IndexServlet</welcome-file>
+</welcome-file-list>
+
+
+</web-app>
+
+
+
